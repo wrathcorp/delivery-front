@@ -45,6 +45,10 @@
 
 <script>
 import HelloWorld from './components/HelloWorld';
+import {getAPI} from "./axiosApi.js"
+getAPI.get().then((response) => {
+  console.log(response);
+})
 
 export default {
   name: 'App',
